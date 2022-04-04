@@ -1,0 +1,10 @@
+
+    
+    create table test.dbt_adhingra.customer_conversions (customer_id integer,converted_at timestamp without time zone,revenue integer)
+  ;
+    -- dbt seed --
+    
+            insert into test.dbt_adhingra.customer_conversions (customer_id, converted_at, revenue) values
+            (%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s)
+        
+  
