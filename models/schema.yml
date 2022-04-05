@@ -11,13 +11,12 @@ exposures:
     
     depends_on:
       - ref('aggregation')
-      - ref('cpa_and_roas')
       - ref('sessions')
       
     owner:
       name: VJ from Data
       email: data@McAfee.com
-      
+
 models:
   - name: attribution_touches
     description: >
