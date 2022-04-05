@@ -1,5 +1,23 @@
 version: 2
 
+exposures:
+  
+  - name: marketing_dashboard
+    type: dashboard
+    maturity: high
+    url: https://public.tableau.com/app/profile/raina.zou/viz/DigitalMarketingInsights/D00OVERALLDASHBOARD
+    description: >
+      "exponential growth"?
+    
+    depends_on:
+      - ref('aggregation')
+      - ref('cpa_and_roas')
+      - ref('sessions')
+      
+    owner:
+      name: VJ from Data
+      email: data@McAfee.com
+      
 models:
   - name: attribution_touches
     description: >
